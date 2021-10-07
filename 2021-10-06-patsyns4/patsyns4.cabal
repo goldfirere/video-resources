@@ -1,0 +1,29 @@
+cabal-version:      2.4
+name:               patsyns4
+version:            0.1.0.0
+synopsis: Demonstration of how clever pattern synonyms can make programs safe and fast
+license:            MIT
+license-file:       LICENSE
+author:             Richard Eisenberg
+maintainer:         rae@richarde.dev
+
+executable patsyns4
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules: NatSafe
+                 , NatUnsafe
+                 , SNatSafe
+                 , SNatUnsafe
+                 , FinSafe
+                 , FinUnsafe
+                 , VecSafe
+                 , VecUnsafe
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:
+        base ^>=4.14.2.0,
+        vector >= 0.12
+
+    default-language: Haskell2010
