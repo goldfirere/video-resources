@@ -1,0 +1,34 @@
+cabal-version:      2.4
+name:               mr
+version:            0.1.0.0
+synopsis:
+
+-- A longer description of the package.
+-- description:
+homepage:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+license:            NONE
+author:             Richard Eisenberg
+maintainer:         rae@richarde.dev
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+library
+    exposed-modules:  MyLib
+
+    -- Modules included in this library but not exported.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.14.3.0
+                    , random >= 1.2
+
+    -- Directories containing source files.
+    -- hs-source-dirs:
+    default-language: Haskell2010
