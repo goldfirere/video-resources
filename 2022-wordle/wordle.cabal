@@ -53,6 +53,7 @@ executable wordle
 
     -- Modules included in this executable, other than Main.
     other-modules:    Words
+                      Wordle
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -61,7 +62,8 @@ executable wordle
     build-depends:    base ^>=4.14.3.0,
                       deepseq >= 1.4,
                       vector >= 0.12,
-                      text >= 1.2
+                      text >= 1.2,
+                      containers >= 0.6
 
     -- Directories containing source files.
     -- hs-source-dirs:
